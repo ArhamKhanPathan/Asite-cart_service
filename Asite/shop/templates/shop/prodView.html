@@ -1,0 +1,36 @@
+{% extends 'shop/basic.html' %}
+
+{% block title %} {{product.pro_name}} - Asite {% endblock%}
+
+{% block body %} 
+<div class = "container">
+    <div class="row my-4" >
+    <div class="col-md-4">
+    <div class="row">
+        <img src="/media/{{product.image}}" width="233px" alt="">
+    </div>
+    <div class="row my-3">
+        <button class="btn btn-primary cart mx-3">Add to cart</button>
+        <button class="btn btn-primary cart">Buy Now</button>
+    </div>
+
+    </div>
+        <div class="col-md-8 my-4" margin-top="100px" top="40px">
+
+            <h5>{{product.pro_name}}</h5>
+            <h6> <b>Rs. {{product.price}} /- only </b> <h6>
+            <p>Extra 10% off</p>
+            <p>{{product.pro_disc}}</p>
+           
+        </div>
+
+    
+    </div>
+
+
+</div>
+
+
+{% endblock %}
+
+
